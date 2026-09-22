@@ -106,11 +106,11 @@ public class GestorTareas {
         System.out.println("Porque prioridad quieres filtrar? ");
         filtro.nextLine();
 
-        switch (filtro)
+       /* switch (filtro)
         {
             case :
 
-        }
+        }*/
     }
 
 }
