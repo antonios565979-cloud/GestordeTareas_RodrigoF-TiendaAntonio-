@@ -16,7 +16,8 @@ public class Main {
             System.out.println("2. Ver lista de tareas");
             System.out.println("3. Marcar tarea como completada");
             System.out.println("4. Eliminar tarea");
-            System.out.println("5. Salir");
+            System.out.println("5. Filtrar por prioridad");
+            System.out.println("6. Salir");
             System.out.print("Selecciona una opción: ");
 
             if (scanner.hasNextInt()) {
@@ -29,7 +30,8 @@ public class Main {
                     case 2 -> gestor.listarTareas();
                     case 3 -> gestor.marcarCompletada();
                     case 4 -> gestor.eliminarTarea();
-                    case 5 -> System.out.println("¡Hasta luego!");
+                    case 5 -> gestor.filtrarTarea();
+                    case 6 -> System.out.println("¡Hasta luego!");
                     default -> System.out.println("Opción no válida. Inténtalo de nuevo (1-5).");
                 }
             } else {

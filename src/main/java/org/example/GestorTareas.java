@@ -72,4 +72,11 @@ public class GestorTareas {
             scanner.nextLine();
         }
     }
+
+    public void filtrarTarea()
+    {
+        Scanner filtro = new Scanner(System.in);
+
+    }
+
 }

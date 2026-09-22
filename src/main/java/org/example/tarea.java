@@ -1,13 +1,25 @@
 package org.example;
 
+import java.util.ArrayList;
+
 public class tarea {
     private String descripcion;
     private boolean completada;
+    ArrayList<String> prioridades = new ArrayList(); //creo una lista para las prioridades
+
 
     // toda tarea añadida empieza como no completada (constructor)
     public tarea(String descripcion) {
         this.descripcion = descripcion;
         this.completada = false;
+
+    }
+
+    private ArrayList<String> prioridades() {
+        prioridades.add("Alta");
+        prioridades.add("Media");
+        prioridades.add("Baja");
+
     }
 
     public String getDescripcion() {
