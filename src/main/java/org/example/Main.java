@@ -36,10 +36,10 @@ public class Main {
                 }
             } else {
                 // el user mete algo q no es un numero entonces sale esto
-                System.out.println("Por favor introduce un número(1-5).");
+                System.out.println("Por favor introduce un número(1-6).");
                 scanner.nextLine();
             }
             // si el user mete un num que no esté comprendido el bucle se repite
-        } while (opcion != 5);
+        } while (opcion != 6);
     }
 }

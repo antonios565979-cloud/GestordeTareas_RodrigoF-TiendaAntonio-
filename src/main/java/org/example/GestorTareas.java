@@ -1,5 +1,6 @@
 package org.example;
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -17,6 +18,32 @@ public class GestorTareas {
         String descripcion = scanner.nextLine();
         listaTareas.add(new tarea(descripcion));
         System.out.println("Tarea añadida con éxito.");
+
+        Scanner opcion = new Scanner(System.in);
+        System.out.println("Dime la prioridad de la tarea: 1. Alta, 2. Media, 3. Baja");
+
+
+        int seleccion = opcion.nextInt();
+        Prioridad seleccionPrioridad = null;
+
+        switch (seleccion){
+            case 1 :
+                seleccionPrioridad = Prioridad.ALTA;
+                break;
+                case 2 :
+                    seleccionPrioridad = Prioridad.MEDIA;
+                    break;
+
+            case 3:
+                seleccionPrioridad = Prioridad.BAJA;
+                break;
+
+            default:
+                System.out.println("Eleccion incorrecta");
+
+
+        }
+
     }
 
     // case 2 muestra las tareas guardadas y las enumera
@@ -76,7 +103,14 @@ public class GestorTareas {
     public void filtrarTarea()
     {
         Scanner filtro = new Scanner(System.in);
+        System.out.println("Porque prioridad quieres filtrar? ");
+        filtro.nextLine();
 
+        switch (filtro)
+        {
+            case :
+
+        }
     }
 
 }

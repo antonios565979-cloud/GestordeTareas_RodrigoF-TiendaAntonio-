@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class tarea {
     private String descripcion;
     private boolean completada;
-    ArrayList<String> prioridades = new ArrayList(); //creo una lista para las prioridades
+
 
 
     // toda tarea añadida empieza como no completada (constructor)
@@ -15,12 +15,6 @@ public class tarea {
 
     }
 
-    private ArrayList<String> prioridades() {
-        prioridades.add("Alta");
-        prioridades.add("Media");
-        prioridades.add("Baja");
-
-    }
 
     public String getDescripcion() {
         return descripcion;
